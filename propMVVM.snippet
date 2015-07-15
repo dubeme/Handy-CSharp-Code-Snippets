@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>propMVVM</Title>
+      <Author>Dubem Enyekwe</Author>
+      <Description>Property for databinding with MVVM light</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propMVVM</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>property</ID>
+          <ToolTip>property name</ToolTip>
+          <Default>Property</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>propertyType</ID>
+          <ToolTip>property type</ToolTip>
+          <Default>Object</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$" Kind="method body"><![CDATA[private $propertyType$ m$property$;
+
+public $propertyType$ $property$
+{
+    get { return m$property$; }
+    set { this.Set(ref this.m$property$, value); }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
